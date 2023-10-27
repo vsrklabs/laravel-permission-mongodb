@@ -1,6 +1,6 @@
 <?php
 
-namespace Maklad\Permission;
+namespace vsrklabs\Permission;
 
 use Illuminate\Support\Collection;
 use ReflectionClass;

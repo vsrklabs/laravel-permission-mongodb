@@ -1,6 +1,6 @@
 <?php
 
-namespace Maklad\Permission\Contracts;
+namespace vsrklabs\Permission\Contracts;
 
 use Maklad\Permission\Exceptions\RoleDoesNotExist;
 

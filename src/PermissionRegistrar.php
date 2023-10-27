@@ -1,6 +1,6 @@
 <?php
 
-namespace Maklad\Permission;
+namespace vsrklabs\Permission;
 
 use Illuminate\Contracts\Auth\Access\Authorizable;
 use Illuminate\Contracts\Auth\Access\Gate;

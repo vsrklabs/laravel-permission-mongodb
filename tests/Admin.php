@@ -1,6 +1,6 @@
 <?php
 
-namespace Maklad\Permission\Test;
+namespace vsrklabs\Permission\Test;
 
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Contracts\Auth\Access\Authorizable as AuthorizableContract;

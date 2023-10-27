@@ -1,6 +1,6 @@
 <?php
 
-namespace Maklad\Permission\Commands;
+namespace vsrklabs\Permission\Commands;
 
 use Illuminate\Console\Command;
 use function app;

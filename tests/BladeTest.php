@@ -1,6 +1,6 @@
 <?php
 
-namespace Maklad\Permission\Test;
+namespace vsrklabs\Permission\Test;
 
 use Artisan;
 use Maklad\Permission\Models\Role;

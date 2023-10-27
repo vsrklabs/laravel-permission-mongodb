@@ -1,6 +1,6 @@
 <?php
 
-namespace Maklad\Permission\Middlewares;
+namespace vsrklabs\Permission\Middlewares;
 
 use Closure;
 use Maklad\Permission\Exceptions\UnauthorizedException;

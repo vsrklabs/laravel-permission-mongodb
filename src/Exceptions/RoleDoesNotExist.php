@@ -1,6 +1,6 @@
 <?php
 
-namespace Maklad\Permission\Exceptions;
+namespace vsrklabs\Permission\Exceptions;
 
 /**
  * Class RoleDoesNotExist

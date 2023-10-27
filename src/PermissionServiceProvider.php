@@ -1,6 +1,6 @@
 <?php
 
-namespace Maklad\Permission;
+namespace vsrklabs\Permission;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\ServiceProvider;

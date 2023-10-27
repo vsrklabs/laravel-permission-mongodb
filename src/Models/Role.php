@@ -1,6 +1,6 @@
 <?php
 
-namespace Maklad\Permission\Models;
+namespace vsrklabs\Permission\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Jenssegers\Mongodb\Eloquent\Model;

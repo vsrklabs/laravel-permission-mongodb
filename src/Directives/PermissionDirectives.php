@@ -1,6 +1,6 @@
 <?php
 
-namespace Maklad\Permission\Directives;
+namespace vsrklabs\Permission\Directives;
 
 use Illuminate\View\Compilers\BladeCompiler;
 use function explode;

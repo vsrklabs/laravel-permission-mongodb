@@ -1,6 +1,6 @@
 <?php
 
-namespace Maklad\Permission\Traits;
+namespace vsrklabs\Permission\Traits;
 
 use function app;
 use function config;
