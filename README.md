@@ -73,21 +73,22 @@ $user->can('edit articles');
  7.x      | 3.x
  8.x      | 3.1.x
  9.x      | 4.x
+ 10.x     | 4.x
 
 ### Laravel
 
 You can install the package via composer:
 
-For laravel 9.x use
+For laravel 10.x, 9.x use
 
 ``` bash
-composer require mostafamaklad/laravel-permission-mongodb
+composer require vsrklabs/laravel-permission-mongodb
 ```
 
 For laravel 8.x and older use
 
 ``` bash
-composer require mostafamaklad/laravel-permission-mongodb:"^3.1"
+composer require vsrklabs/laravel-permission-mongodb:"^3.1"
 ```
 
 You can publish [the migration](database/migrations/create_permission_collections.php.stub) with:
@@ -122,7 +123,7 @@ return [
          * `Maklad\Permission\Contracts\Permission` contract.
          */
 
-        'permission' => Maklad\Permission\Models\Permission::class,
+        'permission' => vsrklabs\Permission\Models\Permission::class,
 
         /*
          * When using the "HasRoles" trait from this package, we need to know which
@@ -130,10 +131,10 @@ return [
          * is often just the "Role" model but you may use whatever you like.
          *
          * The model you want to use as a Role model needs to implement the
-         * `Maklad\Permission\Contracts\Role` contract.
+         * `vsrklabs\Permission\Contracts\Role` contract.
          */
 
-        'role' => Maklad\Permission\Models\Role::class,
+        'role' => vsrklabs\Permission\Models\Role::class,
 
     ],
 
@@ -187,14 +188,14 @@ return [
 You can install the package via Composer:
 
 ``` bash
-composer require mostafamaklad/laravel-permission-mongodb
+composer require vsrklabs/laravel-permission-mongodb
 ```
 
 Copy the required files:
 
 ```bash
-cp vendor/mostafamaklad/laravel-permission-mongodb/config/permission.php config/permission.php
-cp vendor/mostafamaklad/laravel-permission-mongodb/database/migrations/create_permission_collections.php.stub database/migrations/2018_01_01_000000_create_permission_collections.php
+cp vendor/vsrklabs/laravel-permission-mongodb/config/permission.php config/permission.php
+cp vendor/vsrklabs/laravel-permission-mongodb/database/migrations/create_permission_collections.php.stub database/migrations/2018_01_01_000000_create_permission_collections.php
 ```
 
 You will also need to create another configuration file at `config/auth.php`. Get it on the Laravel repository or just run the following command:
@@ -778,10 +779,10 @@ If you discover any security-related issues, please email dev.mostafa.maklad@gma
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
 
-[link-packagist]: https://packagist.org/packages/mostafamaklad/laravel-permission-mongodb
-[ico-version]: https://img.shields.io/packagist/v/mostafamaklad/laravel-permission-mongodb.svg?style=flat-square
-[ico-license]: https://img.shields.io/packagist/l/mostafamaklad/laravel-permission-mongodb.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/mostafamaklad/laravel-permission-mongodb.svg?style=flat-square
+[link-packagist]: https://packagist.org/packages/vsrklabs/laravel-permission-mongodb
+[ico-version]: https://img.shields.io/packagist/v/vsrklabs/laravel-permission-mongodb.svg?style=flat-square
+[ico-license]: https://img.shields.io/packagist/l/vsrklabs/laravel-permission-mongodb.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/vsrklabs/laravel-permission-mongodb.svg?style=flat-square
 
 [link-laravel-5.2]: https://laravel.com/docs/5.2
 [ico-laravel-5.2]: https://img.shields.io/badge/Laravel-5.2.x-brightgreen.svg?style=flat-square
@@ -794,37 +795,37 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [link-laravel-5.6]: https://laravel.com/docs/5.6
 [ico-laravel-5.6]: https://img.shields.io/badge/Laravel-5.6.x-brightgreen.svg?style=flat-square
 
-[link-travis]: https://travis-ci.org/mostafamaklad/laravel-permission-mongodb
-[ico-travis]: https://img.shields.io/travis/mostafamaklad/laravel-permission-mongodb/master.svg?style=flat-square
+[link-travis]: https://travis-ci.org/vsrklabs/laravel-permission-mongodb
+[ico-travis]: https://img.shields.io/travis/vsrklabs/laravel-permission-mongodb/master.svg?style=flat-square
 
-[link-scrutinizer]: https://scrutinizer-ci.com/g/mostafamaklad/laravel-permission-mongodb
-[link-scrutinizer-build]: https://scrutinizer-ci.com/g/mostafamaklad/laravel-permission-mongodb/build-status/master
-[link-scrutinizer-coverage]: https://scrutinizer-ci.com/g/mostafamaklad/laravel-permission-mongodb/code-structure
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/g/mostafamaklad/laravel-permission-mongodb.svg?style=flat-square
-[ico-scrutinizer-build]: https://img.shields.io/scrutinizer/build/g/mostafamaklad/laravel-permission-mongodb.svg?style=flat-square
-[ico-scrutinizer-coverage]: https://img.shields.io/scrutinizer/coverage/g/mostafamaklad/laravel-permission-mongodb.svg?style=flat-square
+[link-scrutinizer]: https://scrutinizer-ci.com/g/vsrklabs/laravel-permission-mongodb
+[link-scrutinizer-build]: https://scrutinizer-ci.com/g/vsrklabs/laravel-permission-mongodb/build-status/master
+[link-scrutinizer-coverage]: https://scrutinizer-ci.com/g/vsrklabs/laravel-permission-mongodb/code-structure
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/g/vsrklabs/laravel-permission-mongodb.svg?style=flat-square
+[ico-scrutinizer-build]: https://img.shields.io/scrutinizer/build/g/vsrklabs/laravel-permission-mongodb.svg?style=flat-square
+[ico-scrutinizer-coverage]: https://img.shields.io/scrutinizer/coverage/g/vsrklabs/laravel-permission-mongodb.svg?style=flat-square
 
-[link-coveralls]: https://coveralls.io/github/mostafamaklad/laravel-permission-mongodb
-[ico-coveralls]: https://img.shields.io/coveralls/mostafamaklad/laravel-permission-mongodb.svg?style=flat-square
+[link-coveralls]: https://coveralls.io/github/vsrklabs/laravel-permission-mongodb
+[ico-coveralls]: https://img.shields.io/coveralls/vsrklabs/laravel-permission-mongodb.svg?style=flat-square
 
 [link-styleci]: https://styleci.io/repos/100894062
 [ico-styleci]: https://styleci.io/repos/100894062/shield?style=flat-square
 
-[link-codeclimate]: https://codeclimate.com/github/mostafamaklad/laravel-permission-mongodb
-[link-codeclimate-coverage]: https://codeclimate.com/github/mostafamaklad/laravel-permission-mongodb/coverage
-[link-codeclimate-maintainability]: https://codeclimate.com/github/mostafamaklad/laravel-permission-mongodb/maintainability
-[ico-codeclimate]: https://img.shields.io/codeclimate/github/mostafamaklad/laravel-permission-mongodb.svg?style=flat-square
-[ico-codeclimate-coverage]: https://img.shields.io/codeclimate/coverage/github/mostafamaklad/laravel-permission-mongodb.svg?style=flat-square
-[ico-codeclimate-issue-count]: https://img.shields.io/codeclimate/issues/github/mostafamaklad/laravel-permission-mongodb.svg?style=flat-square
+[link-codeclimate]: https://codeclimate.com/github/vsrklabs/laravel-permission-mongodb
+[link-codeclimate-coverage]: https://codeclimate.com/github/vsrklabs/laravel-permission-mongodb/coverage
+[link-codeclimate-maintainability]: https://codeclimate.com/github/vsrklabs/laravel-permission-mongodb/maintainability
+[ico-codeclimate]: https://img.shields.io/codeclimate/github/vsrklabs/laravel-permission-mongodb.svg?style=flat-square
+[ico-codeclimate-coverage]: https://img.shields.io/codeclimate/coverage/github/vsrklabs/laravel-permission-mongodb.svg?style=flat-square
+[ico-codeclimate-issue-count]: https://img.shields.io/codeclimate/issues/github/vsrklabs/laravel-permission-mongodb.svg?style=flat-square
 [ico-codeclimate-maintainability]: https://api.codeclimate.com/v1/badges/005c3644a2db6b364514/maintainability
 
-[link-codacy]: https://www.codacy.com/app/mostafamaklad/laravel-permission-mongodb?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=mostafamaklad/laravel-permission-mongodb&amp;utm_campaign=Badge_Grade
+[link-codacy]: https://www.codacy.com/app/vsrklabs/laravel-permission-mongodb?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=vsrklabs/laravel-permission-mongodb&amp;utm_campaign=Badge_Grade
 [ico-codacy]: https://api.codacy.com/project/badge/Grade/11620283b18945e2beb77e59ddc90624
 
 [link-sensiolabs]: https://insight.sensiolabs.com/projects/9a0d8b6f-1b6d-4f9f-ba87-ed9ab66b7707
 [ico-sensiolabs]: https://insight.sensiolabs.com/projects/9a0d8b6f-1b6d-4f9f-ba87-ed9ab66b7707/mini.png
 
-[link-author]: https://github.com/mostafamaklad
+[link-author]: https://github.com/vsrklabs
 [link-contributors]: ../../contributors
 [link-releases]: ../../releases
 [link-laravel-permission]: https://github.com/spatie/laravel-permission
